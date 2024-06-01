@@ -70,7 +70,7 @@ export default function LoginPage() {
               </Button>
             </div>
             <div className="mt-6 text-center text-sm">
-              Don't have an account?{" "}
+              Don`t have an account?{" "}
               <Link href="/signup" className="underline text-blue-500">
                 Sign up
               </Link>

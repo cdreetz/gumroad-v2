@@ -9,7 +9,7 @@ import { createClient } from "@/utils/supabase/client";
 export default function NewProduct() {
   const [productName, setProductName] = useState('');
   const [productDescription, setProductDescription] = useState('');
-  const [productPrice, setProductPrice] = useState<number | ''>('');
+  const [productPrice, setProductPrice] = useState<string>('');
   const [userId, setUserId] = useState<string | null>(null);
   const router = useRouter();
 

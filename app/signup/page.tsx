@@ -101,7 +101,7 @@ export default function SignUpPage() {
                     <h3 className="font-medium text-white">We handle all the payment stuff</h3>
                     <p className="text-white">
                       You should be focused on creating awesome content.
-                      We'll deal with the rest.
+                      We`ll deal with the rest.
                     </p>
                   </div>
                 </div>
