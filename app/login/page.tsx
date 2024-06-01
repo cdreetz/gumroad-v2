@@ -28,12 +28,12 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="w-full lg:w-auto mx-4 lg:mx-16 2xl:mx-12 lg:grid lg:min-h-[600px] lg:grid-cols-2 xl:min-h-[800px]">
+    <div className="flex items-center justify-center w-full mx-4 lg:mx-16 2xl:mx-12 min-h-screen">
       <div className="flex items-center justify-center py-12">
         <Form {...methods}>
           <form onSubmit={handleSubmit(onSubmit)} className="mx-auto grid w-full max-w-[540px] gap-14 border border-gray-500 shadow-2xl rounded-lg p-20 sm:p-16 items-center bg-black text-white">
             <div className="grid gap-4 text-center">
-              <h1 className="text-3xl font-bold">Login to Your Account</h1>
+              <h1 className="text-3xl font-bold">Login to Your <span style={{ color: '#ff90e8' }}>Gumroad</span> Account</h1>
               <p className="text-balance">
                 Enter your credentials below to access your account
               </p>
@@ -65,7 +65,7 @@ export default function LoginPage() {
                 />
                 {errors.password && <span>This field is required</span>}
               </div>
-              <Button type="submit" name="login" className="w-full bg-blue-500 text-white">
+              <Button type="submit" name="login">
                 Log in
               </Button>
             </div>
