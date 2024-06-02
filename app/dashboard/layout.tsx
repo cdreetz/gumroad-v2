@@ -47,7 +47,7 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
 
   return (
     <div className="flex flex-col text-white w-full h-full">
-      <div className="flex w-full h-[100px] border-b border-gray-200">
+      <div className="flex w-full h-[100px] border-b border-gray-400">
         <div className="flex justify-center items-center w-1/6 bg-black">
           <h1 className="text-xl font-semibold">Gumroad</h1>
         </div>
