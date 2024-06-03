@@ -1,4 +1,5 @@
 import { Separator } from "@/components/ui/separator";
+import { Button } from "@/components/ui/button";
 
 interface CheckoutItemProps {
   productName: string;
@@ -93,19 +94,33 @@ function PaymentColumn() {
 
 export default function CheckoutPage() {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 justify-center text-white w-full  bg-[#242423] mx-auto p-[clamp(1rem,5vw,4rem)]">
-      <div className="flex flex-col space-y-4 max-w-[660px] mx-auto">
-        <div className="bg-black border border-gray-600">
-          <CheckoutCart />
-          {/* List items in cart here */}
+    <div className="flex flex-col text-white w-full bg-[#242423] mx-auto">
+      <div className="flex w-full border-b">
+        <div className="flex justify-center items-center w-1/6 bg-black">
+          <h1 className="text-4xl font-semibold">Gumroad</h1>
         </div>
-        <div className="bg-black border border-gray-600 p-4">
-          <h2 className="text-md font-semibold">Customers who bought these items also bought</h2>
-          {/* Recommendations list here */}
+        <div className="flex w-3/6 py-8 px-4 sm:px-6 lg:px-8 items-center">
+          <h1 className="text-4xl font-semibold">Checkout</h1>
+        </div>
+        <div className="flex items-center py-8 px-4">
+          <Button className="bg-transparent border border-gray-600 px-3 py-4 text-sm">Continue shopping</Button>
+        </div>
+        <div className="flex w-1/6">
         </div>
       </div>
-      <PaymentColumn />
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 justify-center w-full mx-auto p-[clamp(1rem,5vw,4rem)]">
+        <div className="flex flex-col space-y-4 max-w-[660px] mx-auto">
+          <div className="bg-black border border-gray-600">
+            <CheckoutCart />
+            {/* List items in cart here */}
+          </div>
+          <div className="bg-black border border-gray-600 p-4">
+            <h2 className="text-md font-semibold">Customers who bought these items also bought</h2>
+            {/* Recommendations list here */}
+          </div>
+        </div>
+        <PaymentColumn />
+      </div>
     </div>
   )
 }
-
